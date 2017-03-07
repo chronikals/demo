@@ -1,8 +1,15 @@
+// Hack to get the modal outside the iframe
 
-// Show modal dialog with condition monitoring information
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus();
-})
+function modal(){
+    $('#myModal2').modal({
+        appendTo: $(window.parent.document).find('body'),
+        overlayCss: {backgroundColor: "#333"}, // Optional overlay style
+        overlayClose: true,
+    });
+    
+// Set overlay's width
+    $(window.parent.document).find('#simplemodal-overlay').css('width', '100%');
+}
 
 // Load alerts file from json as page is loaded
 $(document).ready(function () {
