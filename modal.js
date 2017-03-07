@@ -37,7 +37,6 @@ $(document).ready(function () {
         if (value == "error1") {
             return [
                 '<a class="like" href="#" data-toggle="modal" data-target="#myModal2" title="Error">',
-                '<script>var openModal = function() {parent.$("#myModal2").modal();};</script>',
                 '<i class="cux abb-cux-error-circle-full cux-16" style="color: #f03040"></i>',
                 '</a>  '
             ].join('');
