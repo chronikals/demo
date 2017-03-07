@@ -36,21 +36,21 @@ $(document).ready(function () {
     function operateFormatter(value, row, index) {
         if (value == "error1") {
             return [
-                '<a class="like" href="javascript:void(0)" title="Like">',
+                '<a class="like" href="#" data-toggle="modal" data-target="#myModal2" title="Error">',
                 '<i class="cux abb-cux-error-circle-full cux-16" style="color: #f03040"></i>',
                 '</a>  '
             ].join('');
         }
         if (value == "error2") {
             return [
-                '<a class="like" href="javascript:void(0)" title="Like">',
+                '<a class="like" data-toggle="modal" data-target="#myModal" title="Warning">',
                 '<i class="cux abb-cux-warning-triangle cux-16" style="color: #cb2bd5"></i>',
                 '</a>  '
             ].join('');
         }
         if (value == "alert") {
             return [
-                '<a class="like" href="javascript:void(0)" title="Like">',
+                '<a class="like" data-toggle="modal" data-target="#myModal" title="Alert">',
                 '<i class="cux abb-cux-warning-triangle cux-16" style="color: #ffd800"></i>',
                 '</a>  '
             ].join('');
