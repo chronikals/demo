@@ -1,7 +1,7 @@
 
 // Show modal dialog with condition monitoring information
 $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus();
+    parent.$('#myInput').focus();
 })
 
 // Load alerts file from json as page is loaded
