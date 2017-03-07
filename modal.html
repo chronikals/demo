@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/abb-style.css"/>
+    <link rel="stylesheet" href="css/bootstrap-table.css"/>
+    <link rel="stylesheet" href="modal-fix.css"/>
+    <link rel="stylesheet" href="fonts/icon-fonts/commonux-2.0.0/css/commonux-2.0.0.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="modal.js"></script>
+
+
+    <title>Modal</title>
+</head>
+
+<body>
+<main>
+    <div class="container-fluid">
+
+        <button style="margin-bottom: 30px; margin-top: 30px;" type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#myModal">
+            Modal 1
+        </button>
+        <button style="margin-bottom: 30px; margin-top: 30px;" type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#myModal2">
+            Modal 2
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Asset Helper</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="modalTag"></h2>
+                        <h5 id="modalDescription"></h5>
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col-lg-1">
+                                <span class="cux abb-cux-error-circle-full cux-24" style="color: #f03040;"/>
+                            </div>
+                            <div class="col-lg-11">
+                                <div class="col-lg-12" style="margin-top: -20px;">
+                                    <h3> Auxiliary Input 1 Error - Fault </h3>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p style="font-weight: 600;"> Possible cause </p>
+                                    <p style="font-weight: 600;"> Suggested action </p>
+                                    <p style="font-weight: 600;"> Severity </p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <p id="modalPossibleCause"></p>
+                                    <p id="modalSuggestedAction"></p>
+                                    <p id="modalSeverity"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col-lg-1">
+                                <span class="cux abb-cux-warning-triangle cux-24" style="color: #ffd800;"/>
+                            </div>
+                            <div class="col-lg-11">
+                                <div class="col-lg-12" style="margin-top: -20px;">
+                                    <h3> Auxiliary Input 2 Warning - Out of specification </h3>
+                                </div>
+                                <div class="col-lg-3">
+                                    <p style="font-weight: 600;"> Possible cause </p>
+                                    <p style="font-weight: 600;"> Suggested action </p>
+                                    <p style="font-weight: 600;"> Severity </p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <p> The digital input of an IO module has created a trip </p>
+                                    <p> Depends on connected equipment </p>
+                                    <p> 400 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-lg-12">
+                                <a href="#" style="align-content: center">Click here to load information for
+                                    inactive conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="cux abb-cux-check cux-16 cux-fw"></i> Done
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="background: #eaeaea;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel2" style="margin-left: 15px;">Asset Helper</h3>
+                    </div>
+                    <div class="modal-body" style="padding: 0px;">
+                        <div class="col-lg-9">
+                            <div class="row" style="margin-top: 20px;">
+                                <div class="col-lg-2">
+                                    <span class="cux abb-cux-error-circle-full" style="color: #f03040; font-size: 48px;"></span>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h2 id="modalTag2" style="margin-top:5px; margin-left: -30px; ">Motor 10</h2>
+                                    <h5 id="modalDescription2" style="margin-left: -30px; ">png22two_slot</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="row" style="margin-top: 20px;">
+                                        <h3>Severity</h3>
+                                        <p>1000</p>
+                                        <h3>Description</h3>
+                                        <p>Motor has been stopped; status is failure; asset
+                                            functionality lost due to an fault at  auxiliary input 1</p>
+                                        <h3>Possible Cause</h3>
+                                        <p>An unrecoverable error was detected while processing the custom application (e.g. checksum error) functionality lost due to an fault at auxiliary input 1</p>
+                                        <h3>Suggested Action</h3>
+                                        <p> The version of application editor and UMC are not compatible. Reload programm into UMC again.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3" style="background: #d7d7d7; height: 470px;">
+                            <h4 style="margin-top: 20px;">ERROR LIST</h4>
+                            <p class="error-item active" style="margin-top: 20px;">Auxiliary Input 2 Warning Out of specification</p>
+                            <p class="error-item" style="margin-top: 20px;">Actuator Warning Out of specification</p>
+                            <p class="error-item" style="margin-top: 20px;">IO Module Warning Fault</p>
+                            <p class="error-item" style="margin-top: 20px;">IO Module Missing Warning Maintenance required (now)</p>
+                            <p class="error-item disabled" style="margin-top: 20px;">Application Error Fault</p>
+                            <p class="error-item disabled" style="margin-top: 20px;">Auxiliary Input 1 Error Fault</p>
+                            <p class="error-item disabled" style="margin-top: 20px;">Auxiliary Input 1 Warning Out of Specification</p>
+                            <p class="error-item disabled" style="margin-top: 20px;">Auxiliary Input 3 Error Fault</p>
+                            <p class="error-item disabled" style="margin-top: 20px;">Auxiliary Input 4 Error Fault</p>
+                        </div>
+                        <div class="modal-footer" style="padding: 0px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="well well-transparent">
+            <h2>Active alarms</h2>
+            <div class="row" style="margin-bottom: 20px;">
+                <table id="active-alerts"
+                       data-search="true"
+                       data-show-refresh="true"
+                       data-show-toggle="true"
+                       data-show-columns="true"
+                       data-toolbar="#toolbar">
+                    <thead>
+                    <tr>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="status"></th>
+                        <th data-field="time"></th>
+                        <th data-field="tag"></th>
+                        <th data-field="description"></th>
+                        <th data-field="message"></th>
+                        <th data-field="condition"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <form class="form">
+            <label>  Motor tag is: </label>
+            <input class="form-control" type="text" id="table-tag" value="Test1"/>
+        </form>
+
+        <form class="form" style="margin-top: 20px;">
+            <label> Condition is: </label>
+            <input class="form-control" type="text" id="table-condition" value="Test2"/>
+        </form>
+    </div>
+</main>
+</body>
+</html>
