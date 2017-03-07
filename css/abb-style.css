@@ -5,7 +5,7 @@
     Main Sass file. Should only contain imports! 
 */
 /* ABB font Helvetica Neue eText Pro */
-@import url(css/bootstrap.css);
+@import url(/bootstrap.css);
 @import url(../fonts/icon-fonts/commonux-2.0.0/css/commonux-2.0.0.css);
 @font-face {
   font-family: 'Helvetica Neue eText Pro';
@@ -107,8 +107,10 @@
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 body {
-  font-family: "ABBvoice", "Sans-Serif", Arial;
-  font-size: 13px; }
+  font-family: "Helvetica Neue eText Pro", "Sans-Serif", Arial;
+  font-size: 12px;
+  font-weight: 500;
+background: #Ffffff}
 
 a {
   color: #0AAEFF;
@@ -142,9 +144,9 @@ h2,
 
 h3,
 .h3 {
-  font-size: 17px;
+  font-size: 13px;
   color: #464646;
-  font-weight: 300; }
+  font-weight: 500; }
 
 h4,
 .h4 {
@@ -315,7 +317,7 @@ th {
   background-color: #F0F0F0; }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #DCDCDC; }
+  background-color: #ebebeb; }
 
 table col[class*="col-"] {
   position: static;
@@ -1453,8 +1455,8 @@ fieldset[disabled] .active.btn-default-dark-toggle-enhanced {
 .btn-primary, .btn-primary:focus,
 .btn-primary.focus {
   color: #FFFFFF;
-  background-color: #004C97;
-  border: 1px solid #004C97;
+  background-color: #0aaeff;
+  border: 1px solid #0aaeff;
   border-bottom: 1px solid #004C97; }
 
 .btn-primary:hover, .btn-primary:active:hover,
