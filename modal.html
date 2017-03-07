@@ -21,14 +21,15 @@
 <main>
     <div class="container-fluid">
 
-        <button style="margin-bottom: 30px; margin-top: 30px;" type="button" class="btn btn-primary" data-toggle="modal"
+        <!--button style="margin-bottom: 30px; margin-top: 30px;" type="button" class="btn btn-primary" data-toggle="modal"
                 data-target="#myModal">
             Modal 1
         </button>
         <button style="margin-bottom: 30px; margin-top: 30px;" type="button" class="btn btn-primary" data-toggle="modal"
                 data-target="#myModal2">
             Modal 2
-        </button>
+        </button-->
+
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -154,33 +155,33 @@
             </div>
         </div>
 
-        <div class="well well-transparent">
-            <h2>Active alarms</h2>
-            <div class="row" style="margin-bottom: 20px;">
-                <table id="active-alerts"
-                       data-search="true"
-                       data-show-refresh="true"
-                       data-show-toggle="true"
-                       data-show-columns="true"
-                       data-toolbar="#toolbar">
-                    <thead>
-                    <tr>
-                        <th data-field="state" data-checkbox="true"></th>
-                        <th data-field="status"></th>
-                        <th data-field="time"></th>
-                        <th data-field="tag"></th>
-                        <th data-field="description"></th>
-                        <th data-field="message"></th>
-                        <th data-field="condition"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
+
+        <h3>Active alarms</h3>
+        <div class="row" style="margin-bottom: 20px;">
+            <table id="active-alerts"
+                   data-search="true"
+                   data-show-refresh="true"
+                   data-show-toggle="true"
+                   data-show-columns="true"
+                   data-toolbar="#toolbar">
+                <thead>
+                <tr>
+                    <th data-field="state" data-checkbox="true"></th>
+                    <th data-field="status"></th>
+                    <th data-field="time"></th>
+                    <th data-field="tag"></th>
+                    <th data-field="description"></th>
+                    <th data-field="message"></th>
+                    <th data-field="condition"></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
 
-        <form class="form">
+
+        <!--form class="form">
             <label>  Motor tag is: </label>
             <input class="form-control" type="text" id="table-tag" value="Test1"/>
         </form>
@@ -188,7 +189,7 @@
         <form class="form" style="margin-top: 20px;">
             <label> Condition is: </label>
             <input class="form-control" type="text" id="table-condition" value="Test2"/>
-        </form>
+        </form-->
     </div>
 </main>
 </body>
