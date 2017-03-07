@@ -62,21 +62,5 @@
     "description": "png22two_slot",
     "message": "Motor is still available",
     "condition": "Thermal Load Prewarn"
-  },
-  {
-    "status": "error2",
-    "time": "2016-06-02 18:20:34.165",
-    "tag": "Motor 18",
-    "description": "png22two_slot",
-    "message": "Motor has been stopped",
-    "condition": "PTC Temperature High Error"
-  },
-  {
-    "status": "alert",
-    "time": "2016-06-02 18:20:34.166",
-    "tag": "Motor 19",
-    "description": "png22two_slot",
-    "message": "Motor has been stopped",
-    "condition": "PTC Temperature High Warning"
   }
 ]
