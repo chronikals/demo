@@ -1,6 +1,6 @@
 // Hack to get the modal outside the iframe
 
-function modal(){
+function modalstart(){
     $('#myModal2').modal({
         appendTo: $(window.parent.document).find('body'),
         overlayCss: {backgroundColor: "#333"}, // Optional overlay style
