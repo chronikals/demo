@@ -110,7 +110,7 @@ body {
   font-family: "Helvetica Neue eText Pro", "Sans-Serif", Arial;
   font-size: 12px;
   font-weight: 500;
-background: #Ffffff}
+  max-height: 50px; }
 
 a {
   color: #0AAEFF;
